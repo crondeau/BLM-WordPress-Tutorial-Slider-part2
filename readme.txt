@@ -7,7 +7,7 @@ http://www.bluelimemedia.com/2012/02/09/build-a-custom-image-slider-on-your-home
 http://www.bluelimemedia.com/2012/02/27/build-a-custom-fade-in-fade-out-slideshow/
 
 Following these tutorials and using the files provided, you will be able to create the following website - 
-http://demo-portfolio.bluelimemedia.com
+http://portfolio-demo.bluelimemedia.com/
 
 --------------------------------------------------------
 
@@ -33,7 +33,7 @@ Setting up the Portfolio theme
 6. Go through your settings and under Reading choose a static page as your home page and select Home.
 7. Set up your menu. You'll need to create a custom menu for the portfolio and link it to the latest post.
 
-That's it. Once that's done, you can play around with the css, layout and transform your site into something a bit more elegant than http://demo-portfolio.bluelimemedia.com
+That's it. Once that's done, you can play around with the css, layout and transform your site into something a bit more elegant than http://portfolio-demo.bluelimemedia.com/
 
 Have fun!
 
