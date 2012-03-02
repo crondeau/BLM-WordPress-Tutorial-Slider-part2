@@ -1,0 +1,292 @@
+/*
+Theme Name: Portfolio Demo 
+Theme URI: http://portfolio-demo.bluelimemedia.com
+Description: Demo prepared for Vancouver Meet up Group to showcase how an image slider can be incorporated without using a plugin
+Version: 1.0
+License: GNU General Public License
+License URI: GPL.txt
+Author: Christine Rondeau
+Author URI: http://www.bluelimemedia.com
+*/
+
+/* CSS Normalize
+normalize.css 2011-11-04T15:38 UTC - 
+http://github.com/necolas/normalize.css */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}
+audio,canvas,video{display:inline;zoom:1px}
+html{font-size:100%;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+body,button,input,select,textarea{font-family:sans-serif}
+a:focus{outline:thin dotted}
+a, a:hover,a:active{outline:0}
+h1{font-size:2em}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:700}
+blockquote{margin:1em 40px}
+dfn{font-style:italic}
+mark{background:#ff0;color:#000}
+pre,code,kbd,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}
+pre{white-space:pre-wrap;word-wrap:break-word}
+q{quotes:none}
+q:before,q:after{content:none}
+small{font-size:75%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-0.5em}
+sub{bottom:-0.25em}
+ul,ol{margin:0;padding:0}
+dd{margin:0 0 0 40px}
+nav ul,nav ol{list-style:none;list-style-image:none}
+img{border:0;-ms-interpolation-mode:bicubic}
+svg:not(:root){overflow:hidden}
+fieldset{border:1px solid silver;margin:0 2px;padding:0.35em 0.625em 0.75em}
+legend{border:0;margin-left:-7px}
+button,input,select,textarea{font-size:100%;vertical-align:middle;margin:0}
+button,input{line-height:normal}
+button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button;overflow:visible}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
+input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+td{vertical-align:top}
+audio:not([controls]),[hidden]{display:none}
+body,figure,form{margin:0}
+
+/* General Styles 
+----------------------------------------------*/
+.clear {clear: both;}
+a {color:#404040;}
+a:hover {color:#cc6600;}
+p {padding:0 0 15px 0; margin:0;}
+h1, h2, h3, h4, h5, h6 {
+	color:#000;
+	font-family: Georgia, Times, 'Times New Roman', serif;
+}
+h1 {
+	margin:0 0 10px 0;
+	font-size:24px; line-height:30px;
+}
+h2, h2 a, h3, h4, h5, h6 { 
+	margin:10px 0;
+	font-size:18px; line-height:26px;
+}
+h2 a  {text-decoration:none; }
+h1 a:hover, h2 a:hover {text-decoration:underline; }
+
+/* Main Layout
+-----------------------------------------------*/
+body {
+	margin: 0px; padding: 0px;
+	background:url(images/bg.png);
+	color: #404040;
+	font:14px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;	
+}
+#wrap {
+	position:relative;
+	width: 960px;
+	margin: 0px auto 0px auto; padding:0;
+}
+/* Header Area 
+-----------------------------------------------------------*/
+#branding {
+	float:left;
+	width:900px; height:60px;
+	padding:20px 30px;
+}
+#logo a {
+	display:block;
+	float:left;
+	width: 210px; height: 45px;
+	text-indent:-9999em;
+	background:url(images/logo.png);
+}
+
+/* Primary Navigation
+-------------------------------------------------------------- */
+#top_nav {
+	position:absolute;
+	top:30px; left:310px;
+	width:620px;
+}
+#top_nav ul { 
+	list-style: none; 
+	font-size:14px;
+	margin:0; padding:0;
+}
+#top_nav .menu-header li, div.menu li {
+	float:left;
+	position: relative;
+}
+#top_nav a {
+	display:block;
+	text-decoration:none;
+	padding:10px 20px;
+}
+
+/* Main Body Content Area 
+-----------------------------------------------------------*/
+#main {
+	float:left;
+	width:900px;
+	padding:20px 30px 20px 30px;
+}
+#content {
+	float: left;
+	width:640px;
+}
+.hentry {padding:0 0 20px 0;}
+.hentry ul, .hentry ol {	
+	margin: 0 20px 5px 20px; 
+	padding:0 20px 5px 20px; 
+}
+
+/* Sidebar Area 
+-------------------------------------------*/
+#sidebar {
+	float:right;
+	width:240px;
+}
+.widget {padding: 20px 0;}
+#sidebar h4 {
+	margin: 0px 0 2px 0; padding: 0 0 2px 0;
+	border-bottom: 1px solid #404040;
+}
+#sidebar ul {list-style: none;}
+#sidebar ul li {
+	padding:5px 10px;
+}
+#sidebar a {
+	text-decoration: none;
+}
+#sidebar a:hover {
+	text-decoration:underline;
+}
+
+/* Project page 
+--------------------------------------------------*/
+.single #content {
+	width:900px;
+	position:relative;
+}
+.single .hentry {
+	float:left;
+	width:240px;
+}
+.single .slides {
+	float:right;
+	width:640px;
+}
+.post-navigation {
+	margin-top:420px;
+	padding:10px 0;
+} 
+.nav-previous {
+	float:left;
+	width:50%;
+	text-align:left;
+}
+.nav-next {
+	float:right;
+	width:50%;
+	text-align:right;
+}
+
+/* slideshow on single post 
+---------------------------------------*/
+#slideshow {
+	position:absolute;
+	top:0px;
+	right:0px;
+	z-index:100;
+}
+#slideshow .slides_container {
+	width:640px; height:400px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+}
+
+#slideshow .slides_container img {
+	display:block;
+}
+
+
+
+/* Home page featured slider
+-----------------------------------------------------------*/
+#featured-slider {
+	float:left;
+	width:940px; height:280px;
+	margin:0 10px;
+	position:relative;
+}
+#featured-slider #slides {
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:100;
+}
+#featured-slider .slides_container {
+	width:940px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+	background:#FFF;
+}
+#featured-slider .slides_container div.slide {
+	width:940px;
+	height:280px;
+	display:block;
+}
+#featured-slider .caption {
+	z-index:500;
+	position:absolute;
+	top: 30px; left:670px;
+	height:220px;
+	width:240px;
+	font-size:12px;
+	line-height:16px;
+	color:#000;
+}
+#featured-slider .caption h2 {
+	font-size:18px;
+	line-height:22px;
+	margin-bottom:10px;
+}
+
+#featured-slider #slides .next, #slides .prev {
+	position:absolute;
+	top:112px;
+	left:-10px;
+	width:30px;
+	height:37px;
+	display:block;
+	z-index:101;
+	text-indent:-99999em;
+	background: url(images/larr.gif);
+}
+#featured-slider #slides .next {
+	left:926px;
+	background: url(images/rarr.gif);
+}
+
+
+/* Footer area
+------------------------------------------------------------*/
+footer {
+	clear: both;
+	text-align: right;
+	width:900px; padding: 10px 30px;
+	margin:0 auto 0 auto;
+}
+footer p {	
+	font-size:12px; 
+}
+footer a {
+	text-decoration:none;
+	color:#404040;
+}
+footer a:hover {
+	text-decoration:underline;
+	color:#404040;
+}

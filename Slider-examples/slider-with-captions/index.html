@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Slides, A Slideshow Plugin for jQuery</title>
+	
+	<link rel="stylesheet" href="css/global.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script src="js/slides.min.jquery.js"></script>
+	<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				generatePagination: false
+				
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="container">
+			<div id="slides">
+				<div class="slides_container">
+					<div class="slide">
+						<a href="#" title=""><img src="img/1.jpg" width="640" height="280" alt=""></a>
+						<div class="caption">
+							<h2>Project title goes here</h2>
+							<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue.</p>
+						</div>
+					</div>
+					<div class="slide">
+						<a href="#" title=""><img src="img/2.jpg" width="640" height="280" alt=""></a>
+						<div class="caption">
+							<h2>Project title goes here</h2>
+							<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue.</p>
+						</div>
+					</div>
+					<div class="slide">
+						<a href="#" title=""><img src="img/3.jpg" width="640" height="280" alt=""></a>
+						<div class="caption">
+							<h2>Project title goes here</h2>
+							<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue.</p>
+						</div>
+					</div>
+				
+				</div>
+					<a href="#" class="prev"><img src="img/larr.gif" width="24" height="43" alt="Arrow Prev"></a>
+					<a href="#" class="next"><img src="img/rarr.gif" width="24" height="43" alt="Arrow Next"></a>
+			</div>
+
+	</div>
+</body>
+</html>
