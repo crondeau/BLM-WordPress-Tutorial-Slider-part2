@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section id="main">
+<div id="main">
 	<section id="content">
 		<article class="hentry">
 			<h1>Oops... File or page not found.</h1>
@@ -7,5 +7,5 @@
 			<p>Sorry for the inconvenience.</p>
 		</article>
 	</section>
-</section><!-- end of main div -->
+</div><!-- end of main div -->
 <?php get_footer(); ?>
