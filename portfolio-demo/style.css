@@ -238,9 +238,6 @@ body {
 	height:280px;
 	display:block;
 }
-#featured-slider .slides_container div.slide a {
-	outline:0;
-}
 #featured-slider .caption {
 	z-index:500;
 	position:absolute;
@@ -267,6 +264,7 @@ body {
 	z-index:101;
 	text-indent:-99999em;
 	background: url(images/larr.gif);
+	outline:0;
 }
 #featured-slider #slides .next {
 	left:926px;
