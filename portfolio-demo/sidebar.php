@@ -20,5 +20,6 @@
 			 	<li><a href="<?php bloginfo( 'comments_rss2_url' ); ?>">Comments (RSS)</a></li>
 			</ul>
 		</aside>
+		
 	<?php endif; ?>
 </section>

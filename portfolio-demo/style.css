@@ -238,6 +238,9 @@ body {
 	height:280px;
 	display:block;
 }
+#featured-slider .slides_container div.slide a {
+	outline:0;
+}
 #featured-slider .caption {
 	z-index:500;
 	position:absolute;
