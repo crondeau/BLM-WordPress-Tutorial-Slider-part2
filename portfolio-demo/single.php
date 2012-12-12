@@ -24,7 +24,9 @@
 				  	$attachments = get_posts( $args );
 				     	if ( $attachments ) {
 				        	foreach ( $attachments as $attachment ) {
+								echo '<div>';
 								echo wp_get_attachment_image( $attachment->ID , 'full' );
+								echo '</div>';
 				      		}
 				   		}?>
 					</div>
